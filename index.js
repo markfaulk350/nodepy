@@ -14,7 +14,7 @@ app.get('/data', async (req, res) => {
     res.json(JSON.parse(data))
 })
 
-const port = process.env.port || 4000
+const port = process.env.PORT || 4000
 
 app.listen(port, () => console.log(`Listening on port ${port}`))
 
